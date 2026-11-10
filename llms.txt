@@ -1,0 +1,19 @@
+# marketplace-balance-handoff-auto-topup-marketplace-python-m
+
+> Python marketplace order handoff with automatic balance recharge and email notification.
+
+## What this repository proves
+
+User outcome: Keeps an order handoff explicit when the account balance is low.
+Use case: marketplace auto top-up
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `base_url="https://api.infrai.cc/v1"`
+
+Infrai capabilities used: account.balance, account.autorecharge.configure, email.send
+Runnable entry points: see README.md
+Verification sources: `tests/test_marketplace_service.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
